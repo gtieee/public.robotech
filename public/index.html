@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .faq {
+            width: 50vw;
+        }
+
+        .answer {
+            width: 48vw;
+            margin-top: 3px;
+            background-color: rgba(80, 80, 80, 0.7);
+            display: none;
+        }
+
+        @media screen and (max-width: 700px) {
+            .faq {
+                width: 80vw;
+            }
+
+            .answer {
+                width: 78vw;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="#" style="color: white">RoboTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#faqs">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-light nav-link fw-bold rounded-pill" style="color: black" href="/log-in">Log
+                        In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 90vh">
+        <h1 class="fw-bold m-2" style="font-size: 500%; text-align: center">
+            Welcome to
+            <span class="text-success">RoboTech</span>
+        </h1>
+        <h1 class="fw-bold" style="font-size: 250%; text-align: center">April 1-3, 2022</h1>
+        <a class="btn btn-success fw-bold rounded-pill p-3" style="margin: 15px" href="https://docs.google.com/forms/d/e/1FAIpQLSfBlGziVlNZgr4-5DCyMD5pbVIywedU8L0Ais6FP-olY_vC2Q/viewform?usp=pp_url">Pre-Register
+            Now!</a>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center bg-success" style="height: 15vh" id="about">
+        <h1 class="fw-bold" style="color: white">About</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="py-5 fs-4" style="width: 80vw">
+            &emsp; RoboTech is a hardware based hackathon run by Georgia Tech's IEEE chapter. Projects will provide
+            participants
+            the opportunities to use hardware systems like CAD tools and microcontrollers to create innovative solutions
+            to real world problems.
+            <br><br>
+            &emsp; Competition themes and event schedules will be released as they are determined. The event will take
+            place at
+            Georgia Tech's campus from April 1st to April 3rd. While we are not yet accepting applications, please feel
+            free to
+            pre-register to get ahead in the process and hear new information as soon as it's released.
+        </p>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center bg-success" style="height: 15vh" id="sponsors">
+        <h1 class="fw-bold" style="color: white">Sponsors</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="py-5 fs-4" style="width: 80vw">
+            If you are interested in becoming a sponsor of RoboTech, please contact us at gatechieee@gmail.com for
+            sponsorship information!
+        </p>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center bg-success" style="height: 15vh" id="faqs">
+        <h1 class="fw-bold" style="color: white">FAQs</h1>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-3" type="button">What are the dates of the
+            event?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">RoboTech will take place the weekend of April 1st to April 3rd.</p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button">Who can participate in the
+            event?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">Any college or university students above the age of 18 may participate.</p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button">Is there a theme for the
+            event?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">Yes, robotics projects will be focused on sustainability. Further information will
+                be released closer to the event.
+            </p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button" id="this">What is the
+            price of attendance?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">While you may purchase and bring your own hardware, the event is absolutely free
+                to attend and some hardware will be provided.</p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button">Do I need a team?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">While you may apply with a team already formed, you will also have the opportunity
+                to find team members after registration.</p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button">Will there be
+            prizes?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">While you may apply with a team already formed, you will also have the opportunity
+                to find team members after registration.</p>
+        </div>
+        <button class="faq btn btn-secondary dropdown-toggle rounded-pill mt-2" type="button">Where can I go to get more
+            information?</button>
+        <div class="answer rounded-3">
+            <p class=" text-light p-1">Please contact us at gatechieee@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        var faqButtons = document.getElementsByClassName("faq");
+        for (var i = 0; i < faqButtons.length; i++) {
+            button = faqButtons[i]
+            console.log(button);
+            button.addEventListener("click", function () {
+                var text = this.nextElementSibling;
+                text.style.display = ((text.style.display == "block") ? "none" : "block");
+            });
+        }
+    </script>
+
+    <div style="height: 10vh"></div>
+</body>
+
+</html>
