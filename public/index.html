@@ -4,8 +4,18 @@
     <meta content='initial-scale=1.0, width=device-width' name='viewport'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/08ba8c7c39.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+    <title>RoboTech 2022</title>
     <style>
+        p {
+            font-family: Avenir,proxima-nova,sans-serif;
+        }
         .faq {
             width: 50vw;
             background-color: #61c0de;
@@ -38,6 +48,11 @@
             font-size: 1.5rem;
             letter-spacing: 0.2em;
             margin-bottom: 5vh;
+        }
+
+        .robotech-bg {
+            background-color: #61c0de;
+            color: white;
         }
 
         #clockdiv{
@@ -77,6 +92,62 @@
             letter-spacing: 0.2em;
             margin-bottom: 5vh;   
         }
+        .animate__fadeIn {
+            --animate-delay: 5s;
+            animation-duration: 2s;
+        }
+        .animate__fadeInUp {
+             --animate-delay: 5s;
+            animation-duration: 2s;
+        }
+
+        .button-rt {
+            background-color: #61c0de;
+            border: none;
+            border-radius: 0.5em;
+
+            box-shadow: 0px 8px 32px rgb(56 123 217 / 60%);
+            background-color: #61c0de;
+            color: #fff;
+            border: none;
+            transform: translateY(-4px);
+            transition: 0.5s;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        @media screen and (min-width: 830px) {
+            .button-rt {
+                margin-left: 30vw;
+            }
+        }
+
+        #grassdiv {
+            background-image: url("grass.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .card-rt {
+            background-color: white;
+            border-radius: 1em;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+            text-align: center;
+            margin-right: 2.2em;
+            width: 22%;
+        }
+        .card-rt:hover {
+            background: #fff;
+            box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            margin-top: -2;
+        }
     </style>
 </head>
 
@@ -94,13 +165,22 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#about">About</a>
+                        <a class="nav-link fs-6 ps-md-4 pe-md-4" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#sponsors">Sponsors</a>
+                        <a class="nav-link fs-6 ps-md-4 pe-md-4" href="#tracks">Tracks</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 ps-md-4 pe-md-4" href="#faqs">FAQ</a>
+                        <a class="nav-link fs-6 ps-md-4 pe-md-4" href="#why">Why Participate?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 ps-md-4 pe-md-4" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 ps-md-4 pe-md-4" href="#faqs">FAQ</a>
+                    </li>
+                    <li class="nav-item" style="float: right !important;">
+                        <a href="https://hack.gt-robotech.com/login" style="text-decoration: none;"><button type="submit" class="button-rt btn robotech-bg">Apply</button></a>
                     </li>
                 </ul>
 
@@ -122,7 +202,7 @@
         <h1 class="fw-bold" style="font-size: 250%; text-align: center">April 1-3, 2022</h1>
         <a class="btn fw-bold rounded-pill p-3" style="margin: 15px; color: white; background-color: #6AA68B;" href="https://docs.google.com/forms/d/e/1FAIpQLSfBlGziVlNZgr4-5DCyMD5pbVIywedU8L0Ais6FP-olY_vC2Q/viewform?usp=pp_url">Pre-Register
             Now!</a> -->
-        <img src="robotech-banner.png" style="width: 90%;">
+        <img class="animate__animated animate__fadeIn" src="robotech-banner-min.png" style="width: 90%;">
         <div id="clockdiv">
             <h1 class="fw-bold heading-rt">APPLICATION DEADLINE</h1>
             <div>
@@ -144,8 +224,7 @@
         </div>
     </div>
 
-    <div class="d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 0px;">
-        <img  src="grass.png" style="width: 100%;">
+    <div id = "grassdiv" class="d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 0px; height: 100vh;">
     </div>
 
 
@@ -170,59 +249,133 @@
     </div>
 
 
-    <div class="container justify-content-center align-items-center s" style="background-color: white; margin-top: 10vh;">
+    <div id = "tracks" class="container justify-content-center align-items-center s" style="background-color: white; margin-top: 10vh;">
         <div class="d-flex justify-content-center align-items-left s" style="padding-top: 5vh;" id="about">
             <h1 class="fw-bold heading-rt" style="color: #61c0de">TRACKS</h1>
         </div>
         <div class="row" style="text-align: center;">
-            <div class="col col-sm-12 col-md-4" >
+            <div class="col col-sm-12 col-md-3" >
                 <img src="pitch.png" width="200vw">
                 <h1 class="track-head">DESIGN</h1>
-                <p style="text-align: justify; padding: 1vh">A <strong>Shark Tank Style</strong> Pitching Competition. Design a prototype using any software, present market analysis, feasibility, etc. Basically tell us by selling us. <br><br>Perfect For: Industrial Design, Architecture, Business, LMC</p>
+                <p style="text-align: justify; padding: 1vh">
+                    Calling all <strong>Design</strong> Students, <strong>Business</strong> Majors, and <strong>Pitching</strong> Maestros! 
+                    <br><br> 
+                    Do you enjoy prototyping? 
+                    <br><br> 
+                    Do you have a passion for selling investors on your products? 
+                    <br><br> Do you love market analysis and case studies? 
+                    <br><br> 
+                    Then the design competition is the perfect place to harness your skills. It is a <strong>Shark Tank Style</strong> Pitching Competition. Design a prototype using any software, present market analysis, feasibility, etc.
+                </p>
             </div>
-            <div class="col col-sm-12 col-md-4">
+            <div class="col col-sm-12 col-md-3">
                 <img src="body.png" width="200vw">
                 <h1 class="track-head">BODY</h1>
-                <p style="text-align: justify; padding: 1vh">Design the body of a robot. No restrictions. Use Art, 3D Printing, Laser Cutting, Power Tools, etc. Just show us that it is feasible.
-                    <br><br>
-                Perfect For: Mechanical Engineers, Artists, Biomedical Engineers, Creative Thinkers
+                <p style="text-align: justify; padding: 1vh">
+                    Calling all <strong>Mechanical Engineer</strong> Students, <strong>Art</strong> Majors, and <strong>Creative</strong> Enthusiasts! 
+                    <br><br> 
+                    Do you enjoy building? 
+                    <br><br> 
+                    Do you have a passion for creating art? 
+                    <br><br> 
+                    Then the body track  is the perfect place to harness your skills. It is a <strong>Robot Body</strong> Design Competition. Design the body of a robot using any, and everything.We are just looking for creativity and feasibility.
                 </p>
             </div>
-            <div class="col col-sm-12 col-md-4">
+            <div class="col col-sm-12 col-md-3">
                 <img src="circuit.png" width="200vw">
                 <h1 class="track-head">CIRCUITRY</h1>
-                <p style="text-align: justify; ">Design a project that includes a circuit component, geared towards robotics.
-                    <br><br>
-                Perfect For: Computer Engineers, Electrical Engineers
+                <p style="text-align: justify; ">
+                    Calling all <strong>Electrical Engineering</strong> Students, <strong>Computer Engineering</strong> Majors, and <strong>Circuit</strong> Aficianados! 
+                    <br><br> 
+                    Do you enjoy circuits? 
+                    <br><br> 
+                    Do you like PCB design? 
+                    <br><br> 
+                    Then the circuit track is the perfect place to harness your skills. Make an project that utilizes a circuit. We leave the rest up to you.
                 </p>
             </div>
-        </div>
-        <div class="row" style="margin-top: 10vh;">
-            <div class="col col-sm-12 col-md-12">
+
+            <div class="col col-sm-12 col-md-3">
                 <div style="margin-left: auto; margin-right: auto;">
                     <img src="code.png" width="200vw">
                     <h1 class="track-head">SOFTWARE</h1>
-                    <p style="text-align: justify;">Any Software Project. 
-                        <br><br>
-                    Perfect For: Computer Scientists
+                    <p style="text-align: justify;">
+                    Calling all <strong>Software Engineering</strong> Students, <strong>Computational Media</strong> Majors, and <strong>AI/ML</strong> Enthusiasts! 
+                    <br><br> 
+                    Do you enjoy coding? 
+                    <br><br> 
+                    Do you like working on innovative software projects? 
+                    <br><br> 
+                    Do you find Computer Vision and Artificial Intelligence cool? 
+                    <br><br> 
+                    Then the circuit track is the perfect place to harness your skills. Make an project that utilizes a circuit. We leave the rest up to you.
                     </p>
                 </div>
             </div>
         </div>
-            
-    </div>
-    
 
-    <div class="d-flex justify-content-center align-items-center" style="padding-top: 5vh;"id="sponsors">
-        <h1 class="fw-bold heading-rt">SPONSORS</h1>
+    </div>
+
+    <div style="background-color: #88d2e2; margin-top: 0vh; padding: 10vh;" id="why">
+        <div class="d-flex justify-content-center align-items-left s" id="about">
+            <h1 class="fw-bold heading-rt" style="color: white">WHY ATTEND ROBOTECH?</h1>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col col-xs-12 col-md-3 card-rt" >
+                <img class="img-box" src="prizes.png" width="200vw">
+                <h1 class="track-head">PRIZES</h1>
+                <p style="text-align: left; padding: 1em">
+                    We have over <strong>$10,000</strong> in Prizes. Do we even need to say more?
+                </p>
+            </div>
+            <div class="col col-xs-12 col-md-3 card-rt" >
+                <img class="img-box" src="sponsors.png" width="200vw">
+                <h1 class="track-head">SPONSORS</h1>
+                <p style="text-align: left; padding: 1em">
+                    We love our sponsors. And you will love them too! Our <strong>Sponsor-Expo</strong> will help you land the internship/job of your dreams.
+                </p>
+            </div>
+            <div class="col col-xs-12 col-md-3 card-rt" >
+                <img class="img-box" src="food.png" width="200vw">
+                <h1 class="track-head">FOOD</h1>
+                <p style="text-align: left; padding: 1em">
+                    <strong>FREE FOOD. ALL WEEKEND.</strong>
+                </p>
+            </div>
+            <div class="col col-xs-12 col-md-3 card-rt" >
+                <img class="img-box" src="workshops.png" width="200vw">
+                <h1 class="track-head">WORKSHOPS & MAKERSPACES</h1>
+                <p style="text-align: left; padding: 1em">
+                    Attend cool workshops in all 4 tracks. Learn about <strong>Artificial Intelligence, CADing, PCB design</strong>, and much more 
+                    <br><br> 
+                    Access our amazing makerspaces equipped with <strong>3D printers, laser cutters, plasma cutters</strong>, and other power tools. 
+                </p>
+            </div>
+        </div>
     </div>
     
-    <div class="d-flex justify-content-center">
-        <p class="py-5 fs-5" style="width: 80vw">
-            If you are interested in becoming a sponsor of RoboTech, please contact us at gatechieee@gmail.com for
-            sponsorship information!
-        </p>
+    <div style="background-color: white; margin-top: 0vh;" id="sponsors">
+        <div class="container" style="padding: 10vh;">
+            <div class="row">
+                <div class="col col-sm-4">
+                    <img src="car.png">
+                </div>
+                <div class="col col-sm-8">
+                    <h1 class="fw-bold heading-rt" style="color: #61c0de; text-align: center;">SPONSORS</h1>
+                    <p class="py-5" style="font-size: 1rem; text-align: justify; background-color: white; padding: 5vh; padding-bottom: 1em !important; border-radius: 2rem; margin-bottom: 5vh;">
+                        EXCITING SPONSOR LIST COMING SOON!
+                        <br><br>
+                        If you are interested in becoming a sponsor of RoboTech, please contact us at gatechieee@gmail.com for
+                        sponsorship information!        
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
     </div>
+
+
 
     <div class="d-flex justify-content-center align-items-center" style="padding-top: 5vh;" id="faqs">
         <h1 class="fw-bold heading-rt">FAQS</h1>
@@ -250,6 +403,11 @@
         <div class="answer rounded-3">
             <p class="text-light p-1">While you may purchase and bring your own hardware, the event is absolutely free
                 to attend and some hardware will be provided.</p>
+        </div>
+
+        <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button" id="this">Is there any travel budget?</button>
+        <div class="answer rounded-3">
+            <p class="text-light p-1">Travel Budget is limited, and is decided on a first-come first-serve basis. Apply soon!</p>
         </div>
         <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Do I need a team?</button>
         <div class="answer rounded-3">
@@ -334,7 +492,13 @@ var deadline = new Date(new Date(2022, 2, 14, 59, 59, 59));
 initializeClock('clockdiv', deadline);
     </script>
 
-    <div style="height: 10vh"></div>
+    <div style="text-align: center; padding: 10vh;">
+        <h1 class="fw-bold heading-rt">FOLLOW US ON SOCIAL MEDIA FOR GIVEAWAYS!</h1>
+        <a href="https://www.instagram.com/gt_ieee/"><img src="instagram.png" width="10%"></a>
+    </div>
+    <div style="padding: 1vh; background-color: #61c0de; text-align: center; color: white;">
+        <p>Made with <i class="fa-solid fa-heart"></i> by GT IEEE</p>
+    </div>
 </body>
 
 </html>
