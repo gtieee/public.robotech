@@ -1,0 +1,132 @@
+.faq {
+    width: 50vw;
+    background-color: #151616;
+    color: white;
+}
+
+.answer {
+    width: 48vw;
+    margin-top: 3px;
+    display: none;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .faq {
+        width: 80vw;
+    }
+
+    .answer {
+        width: 78vw;
+    }
+}
+.text-light {
+    color: black !important;
+}
+.heading-rt {
+    font-weight: 1000;
+    margin-top: 2vh;
+    color: white; 
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 5vh;
+}
+
+.robotech-bg {
+    background-color: hwb(222 18% 18%);
+    color: white;
+}
+
+#clockdiv{
+    margin-top: 4.5vh;
+    margin-bottom: 10vh;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #88d2e2;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #61c0de;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.track-head {
+    font-weight: 1000;
+    margin-top: 2vh;
+    color: #61c0de; 
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 5vh;   
+}
+.animate__fadeIn {
+    --animate-delay: 5s;
+    animation-duration: 2s;
+}
+.animate__fadeInUp {
+        --animate-delay: 5s;
+    animation-duration: 2s;
+}
+
+.button-rt {
+    background-color: #61c0de;
+    border: none;
+    border-radius: 0.5em;
+
+    box-shadow: 0px 8px 32px rgb(56 123 217 / 60%);
+    background-color: #61c0de;
+    color: #fff;
+    border: none;
+    transform: translateY(-4px);
+    transition: 0.5s;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 830px) {
+    .button-rt {
+        margin-left: 30vw;
+    }
+}
+
+.card-rt {
+    border-radius: 1em;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.card-rt:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: -2;
+}
+
+#splash {
+    background-image:url(background-splash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 60vh;
+}
