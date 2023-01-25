@@ -27,9 +27,12 @@
     font-weight: 1000;
     margin-top: 2vh;
     color: white; 
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2em;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    text-shadow: 2px 2px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000
 }
 
 .robotech-bg {
@@ -128,5 +131,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    padding-top: 60vh;
+    padding-top: 15vh;
 }
