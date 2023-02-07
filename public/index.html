@@ -17,11 +17,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <div>
-        <nav class="navbar navbar-custom navbar-dark navbar-expand-lg fixed-top" id="nav" 
+        <nav class="navbar shadowed navbar-dark navbar-expand-lg fixed-top" id="nav" 
             style="margin: 0.5em; border-radius:5px; transition: background-color 0.5s; background-color: transparent;">
             <div class="container-fluid"> 
                 <a class="navbar-brand fs-3" href="#" style="color: white; transition: color 0.5s; letter-spacing: 0.2em;" id="nav-title">ROBOTECH</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                <button class="shadowed navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="color: black;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -81,7 +81,7 @@
         </div>
 
 
-        <div style="background-color: #eb98c996; margin-top: 0vh;" id="about">
+        <div class="gradient-background" style="margin-top: 0vh;" id="about">
             <div class="container" style="padding: 10vh">
                 <div class="row">
                     <div class="col-lg-8">
@@ -105,12 +105,12 @@
         <div class="container justify-content-center align-items-center container-fluid" style="margin-top: 0vh; padding-bottom: 5vh;">
             <div class="row" style="text-align: center;">
                 <div class="col-lg-6 my-1">
-                    <img src="pic.jpg" class="img-fluid" style="height: 400px">
+                    <div id="pic1"></div>
                 </div>
-            <div class="col-lg-6 my-1 px-1">
-                <img src="pic2.jpg" class="img-fluid" style="height: 400px">
+                <div class="col-lg-6 my-1 px-1">
+                    <div id="pic2"></div>
+                </div>
             </div>
-        </div>
         </div>
         </div>
 
@@ -182,7 +182,7 @@
 
         </div>
 
-        <div style="background-color: #eb98c996; margin-top: 0vh; padding: 10vh;" id="why">
+        <div class="gradient-background" style="margin-top: 0vh; padding: 10vh;" id="why">
             <div class="d-flex justify-content-center align-items-left s" id="about">
                 <h1 class="fw-bold heading-rt" style="color: white">WHY ATTEND ROBOTECH?</h1>
             </div>
@@ -230,7 +230,7 @@
         
         <div style="background-color: white; margin-top: 0vh; height: 50vh;" id="sponsors">
             <div class="d-flex justify-content-center align-items-center s" id="about">
-                <h1 class="fw-bold heading-rt" style="color: #eb98c9;">SPONSORS</h1>
+                <h1 class="fw-bold heading-rt" style="padding-top: 5vh;">SPONSORS</h1>
             </div>
             <!--
             <div class="container" style="padding: 2vh;">
@@ -289,7 +289,7 @@
                     </div>
             </div>
             -->
-            <h1 class="heading-rt" style="padding: 11vh; margin:auto; text-align: center; color:#eb98c9">COMING SOON!</h1>
+            <h3 class="heading-rt" style="padding: 10vh; margin:auto; text-align: center;">COMING SOON!</h3>
         </div>
 
         <!--
@@ -330,69 +330,68 @@
             </div>
         </div>-->
 
-        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: #eb98c996; padding-bottom: 3vh;" id="faqs">
+        <div class="gradient-background d-flex flex-column justify-content-center align-items-center" style="padding-bottom: 3vh;" id="faqs">
             <h1 class="fw-bold heading-rt">FAQS</h1>
-            <button class="faq btn dropdown-toggle rounded-pill mt-3" type="button">What are the dates of the
-                event?</button>
+            <div class="faq rounded-pill mt-3">What are the dates of the
+                event?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">RoboTech will take place the weekend of March 3rd-5th</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Who can participate in the
-                event?</button>
+            <div class="faq rounded-pill mt-2">Who can participate in the
+                event?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">Any college or university students above the age of 18 may participate.</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Is there a theme for the
-                event?</button>
+            <div class="faq rounded-pill mt-2">Is there a theme for the
+                event?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">Yes, robotics projects will be focused on mental health and wellness. Further information about the theme
                     and judging criteria will be released soon.
                 </p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button" id="this">What is the
-                price of attendance?</button>
+            <div class="faq rounded-pill mt-2" id="this">What is the
+                price of attendance?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">The event is completely free to attend!</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button" id="this">Will hardware be provided?</button>
+            <div class="faq rounded-pill mt-2" id="this">Will hardware be provided?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">Yes! A list of available hardware will be released at the event</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button" id="this">Will there be travel reimbursements?</button>
+            <div class="faq rounded-pill mt-2" id="this">Will there be travel reimbursements?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">Travel reimbursements will be limited to a maximum of $200 and will be subject to more rigorous application standards.
                     Please note on your application if you are requesting travel funding.
                 </p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Do I need a team?</button>
+            <div class="faq rounded-pill mt-2">Do I need a team?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">While you may apply with a team already formed, you will also have the opportunity
                     to find team members after registration.</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Will there be
-                prizes?</button>
+            <div class="faq rounded-pill mt-2">Will there be
+                prizes?</div>
             <div class="answer rounded-3">
                 <p class="text-light p-1">Yes!</p>
             </div>
-            <button class="faq btn  dropdown-toggle rounded-pill mt-2" type="button">Where can I go to get more
-                information?</button>
+            <div class="faq rounded-pill mt-2">Where can I go to get more
+                information?</div>
             <div class="answer rounded-3">
                 <p class=" text-light p-1">Please contact us at gatechieee@gmail.com</p>
             </div>
-        </div>
     </div>
 
 
     <script>
-        var faqButtons = document.getElementsByClassName("faq");
-        for (var i = 0; i < faqButtons.length; i++) {
-            button = faqButtons[i]
-            console.log(button);
-            button.addEventListener("click", function () {
-                var text = this.nextElementSibling;
-                text.style.display = ((text.style.display == "block") ? "none" : "block");
-            });
-        }
+        // var faqButtons = document.getElementsByClassName("faq");
+        // for (var i = 0; i < faqButtons.length; i++) {
+        //     button = faqButtons[i]
+        //     console.log(button);
+        //     button.addEventListener("click", function () {
+        //         var text = this.nextElementSibling;
+        //         text.style.display = ((text.style.display == "block") ? "none" : "block");
+        //     });
+        // }
 
         var navbar = document.getElementById("nav");
         var navTitle = document.getElementById("nav-title");
@@ -405,7 +404,7 @@
                 navList3.style.color = "black";
                 navList4.style.color = "black";
                 navList5.style.color = "black";
-                navList6.style.color = "black";
+                // navList6.style.color = "black";
             } else {
                 navbar.style.backgroundColor = "transparent";
                 navTitle.style.color = "white";
@@ -414,7 +413,7 @@
                 navList3.style.color = "white";
                 navList4.style.color = "white";
                 navList5.style.color = "white";
-                navList6.style.color = "white";
+                // navList6.style.color = "white";
             }
         }
         function getTimeRemaining(endtime) {
@@ -461,7 +460,7 @@ initializeClock('clockdiv', deadline);
     </script>
 
     <div style="text-align: center; padding: 10vh;">
-        <h1 class="fw-bold heading-rt " style="color: #eb98c9";>FOLLOW US ON SOCIAL MEDIA FOR GIVEAWAYS!</h1>
+        <h1 class="fw-bold heading-rt ";>FOLLOW US ON SOCIAL MEDIA FOR GIVEAWAYS!</h1>
         <a href="https://www.instagram.com/gt_ieee/"><img src="instagram.png" class="img-fluid" style="max-height: 10vh"></a>
     </div>
     <div style="padding: 1vh; background-color: #000000; text-align: center; color: white;">
