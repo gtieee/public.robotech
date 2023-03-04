@@ -1,0 +1,168 @@
+.faq {
+    width: 50vw;
+    background-color: #151616;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.answer {
+    width: 48vw;
+    margin-top: 3px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .faq {
+        width: 80vw;
+    }
+
+    .answer {
+        width: 78vw;
+    }
+}
+
+.shadowed {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.heading-rt {
+    font-weight: 1000;
+    margin-top: 2vh;
+    color: white; 
+    font-size: calc(1.5vw + 1rem);
+    letter-spacing: 0.2em;
+    margin-bottom: 1vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    text-shadow: 2px 2px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000
+}
+
+.robotech-bg {
+    background-color: hwb(222 18% 18%);
+    color: white;
+}
+
+#clockdiv{
+    margin-top: 4.5vh;
+    margin-bottom: 10vh;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #88d2e2;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #61c0de;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.track-head {
+    font-weight: 1000;
+    margin-top: 2vh;
+    color: #61c0de; 
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 5vh;   
+}
+.animate__fadeIn {
+    --animate-delay: 5s;
+    animation-duration: 2s;
+}
+.animate__fadeInUp {
+        --animate-delay: 5s;
+    animation-duration: 2s;
+}
+
+.button-rt {
+    background-color: #61c0de;
+    border: none;
+    border-radius: 0.5em;
+
+    box-shadow: 0px 8px 32px rgb(56 123 217 / 60%);
+    background-color: #61c0de;
+    color: #fff;
+    border: none;
+    transform: translateY(-4px);
+    transition: 0.5s;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 830px) {
+    .button-rt {
+        margin-left: 30vw;
+    }
+}
+
+.card-rt {
+    border-radius: 1em;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.card-rt:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: -2;
+}
+
+
+/* Images */
+
+#splash {
+    background-image:url(background-splash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+#pic1 {
+    background-image:url(pic.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+#pic2 {
+    background-image:url(pic2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.gradient-background {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fd6a63+12,2989d8+66,2989d8+66,61a1fd+100 */
+    background: #fd6a63; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #fd6a63 12%, #2989d8 66%, #2989d8 66%, #61a1fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #fd6a63 12%,#2989d8 66%,#2989d8 66%,#61a1fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #fd6a63 12%,#2989d8 66%,#2989d8 66%,#61a1fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6a63', endColorstr='#61a1fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

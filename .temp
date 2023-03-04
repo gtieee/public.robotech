@@ -1,0 +1,46 @@
+  <div class="faq rounded-pill mt-3">What are the dates of the
+                event?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">RoboTech will take place the weekend of March 3rd-5th</p>
+            </div>
+            <div class="faq rounded-pill mt-2">Who can participate in the
+                event?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">Any college or university students above the age of 18 may participate.</p>
+            </div>
+            <div class="faq rounded-pill mt-2">Is there a theme for the
+                event?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">Yes, robotics projects will be focused on mental health and wellness. Further information about the theme
+                    and judging criteria will be released soon.
+                </p>
+            </div>
+            <div class="faq rounded-pill mt-2" id="this">What is the
+                price of attendance?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">The event is completely free to attend!</p>
+            </div>
+            <div class="faq rounded-pill mt-2" id="this">Will hardware be provided?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">Yes! A list of available hardware will be released at the event</p>
+            </div>
+            <div class="faq rounded-pill mt-2" id="this">Will there be travel reimbursements?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">Travel reimbursements will be limited to a maximum of $200 and will be subject to more rigorous application standards.
+                    Please note on your application if you are requesting travel funding.
+                </p>
+            </div>
+            <div class="faq rounded-pill mt-2">Do I need a team?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">While you may apply with a team already formed, you will also have the opportunity
+                    to find team members after registration.</p>
+            </div>
+            <div class="faq rounded-pill mt-2">Will there be
+                prizes?</div>
+            <div class="answer rounded-3">
+                <p class="text-light p-1">Yes!</p>
+            </div>
+            <div class="faq rounded-pill mt-2">Where can I go to get more
+                information?</div>
+            <div class="answer rounded-3">
+                <p class=" text-light p-1">Please contact us at gatechieee@gmail.com</p>
